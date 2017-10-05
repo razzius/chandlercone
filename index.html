@@ -1,33 +1,52 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>Chandler Cone</title>
-        <link rel="stylesheet" href="normalize.min.css">
-        <link rel="stylesheet" href="chandler.css">
-        <!-- <link rel="icon" href="/static/img/favicon.ico"> -->
+        <style>
+            body {
+                margin: 0 auto;
+                font-family: helvetica, sans-serif;
+                height: 4000px;
+            }
+
+            h1, h2 {
+                text-align: center;
+                position: fixed;
+                width: 100%;
+            }
+
+            h1 {
+                font-weight: 100;
+                bottom: 0;
+                animation: fadein 1s;
+            }
+
+            @keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+            h2 {
+                filter: blur(2px);
+                animation: fadein 20s;
+                top: 0;
+                transform: rotate(-3deg);
+                color: white;
+                opacity: .9;
+            }
+
+            img {
+                max-height: 100%;
+                display:block;
+                position:fixed;
+                left:0;
+                right:0;
+                bottom:0;
+                margin:auto;
+            }
+        </style>
     </head>
     <body>
-        <div class="header-container">
-            <header class="wrapper clearfix">
-                <h1 class="title"><a href="/">C Squared</a></h1>
-            </header>
-        </div>
-
-        <div class="main-container">
-            <div class="main wrapper clearfix">
-                <img class="img-rounded" src="detroit-tigers-logo.jpg">
-                <br>
-                <br>
-                <a href="https://twitter.com/chanderbilt"><h1><img src="Twitter_logo_blue.png" width="55px" style="padding:30px">@chanderbilt</h1></a>
-            </div> <!-- #main -->
-        </div> <!-- #main-container -->
-
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+        <img min-width="100%" height="100%" alt="you herd of deer" src="./deer.jpg"/>
+        <h1>Album coming December 25</h1>
+        <h2>run for it</h2>
     </body>
 </html>
