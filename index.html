@@ -1,52 +1,33 @@
 <html>
-    <head>
-        <style>
-            body {
-                margin: 0 auto;
-                font-family: Tahoma, Geneva, sans-serif;
-                height: 4000px;
-            }
+  <head>
+    <style>
+      body {
+        background: black;
+        margin: 0 auto;
+        font-family: Tahoma, Geneva, sans-serif;
+      }
 
-            h1, h2 {
-                text-align: center;
-                position: fixed;
-                width: 100%;
-            }
+      h1 {
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        color: white;
+        font-weight: 100;
+        bottom: 400px;
+        animation: fadein 1s;
+      }
 
-            h1 {
-                font-weight: 100;
-                bottom: 0;
-                animation: fadein 1s;
-            }
-
-            @keyframes fadein {
-                from { opacity: 0; }
-                to   { opacity: 1; }
-            }
-
-            h2 {
-                filter: blur(2px);
-                animation: fadein 20s;
-                top: 0;
-                transform: rotate(-3deg);
-                color: white;
-                opacity: .9;
-            }
-
-            img {
-                max-height: 100%;
-                display:block;
-                position:fixed;
-                left:0;
-                right:0;
-                bottom:0;
-                margin:auto;
-            }
-        </style>
-    </head>
-    <body>
-        <img alt="you herd of deer" src="./deer.jpg"/>
-        <h1>ALBUM COMING DECEMBER 25</h1>
-        <h2>run for it</h2>
-    </body>
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>MERCH COMING SOON</h1>
+  </body>
 </html>
